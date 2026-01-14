@@ -29,6 +29,14 @@ def find_intersection(list_1, list_2):
                 interseccion.append(item_1)
     return interseccion
 
+''' Opción de la solución (más optimizada)
+def find_intersection(list_1, list_2):
+    set1 = set(list_1)
+    set2 = set(list_2)
+    intersection = set1 & set2
+    return intersection
+'''
+
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 
