@@ -50,12 +50,12 @@ def create_list(length_list):
     """
 
     # Write here your code
-    if length_list <= 0:
+    if length_list < 0:
         raise ValueError("The number must be positive")
     
     list_ram = []
     list_copy = []
-    while len(list_ram) < 6:
+    while len(list_ram) < length_list:
         list_ram.append(random.randint(0, 100))
     list_copy = copy.deepcopy(list_ram)
     
@@ -64,4 +64,4 @@ def create_list(length_list):
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-print(create_list(4))
+print(create_list(0))
